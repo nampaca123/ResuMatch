@@ -52,8 +52,3 @@ class PDFExtractor:
         except Exception as e:
             logger.error(f"Error in _process_pdf: {str(e)}")
             raise
-
-    def _clean_text(self, text: str) -> str:
-        """추가적인 텍스트 정제가 필요한 경우를 위한 메서드"""
-        # 필요한 경우 구현
-        pass

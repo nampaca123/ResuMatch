@@ -96,8 +96,3 @@ class ImageExtractor:
         except Exception as e:
             logger.error(f"Error in _process_image: {str(e)}")
             raise
-
-    def _enhance_image_quality(self, image):
-        """추가적인 이미지 품질 향상이 필요한 경우를 위한 메서드"""
-        # 필요한 경우 구현
-        pass
