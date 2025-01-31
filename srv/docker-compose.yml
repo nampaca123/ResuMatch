@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  extraction-server:
+    build: 
+      context: ./extraction-server
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./extraction-server/app:/app/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - resume-network
+
+networks:
+  resume-network:
+    driver: bridge

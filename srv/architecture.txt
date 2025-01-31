@@ -1,0 +1,28 @@
+Tech Stack
+
+Client(Frontend Server, Send Resume(PDF and image file) to FastAPI Server) {
+- React (TypeScript)
+- Tailwind CSS
+}
+→
+FastAPI Server (Transcribe PDF and image into text) {
+    - FastAPI (Python)
+    - PyTorch (EasyOCR) & Google Tesseract OCR
+}
+→
+Spring Boot Server (Chat with AI & DB Management) {
+    - Spring Boot (Java)
+    - OpenAI API
+    - MySQL
+    - Hibernate ORM
+}
+
+Kafka Server (Connect Spring Boot Server and Spark Server) {
+    - Kafka
+    - Zookeeper
+}
+
+Spark Server (Making Statistics about Resume) {
+    - Spark (Scala)
+    - MySQL
+}
